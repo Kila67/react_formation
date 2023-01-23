@@ -1,8 +1,11 @@
 import React from 'react'
 
 
-const Button=()=>{
-    return <Button className='Button'>benjamin</Button>
+const Button=(props)=>{
+    console.log(props);
+    return <button className='Button'>
+        {props.text.substr(2,4)}
+    </button>
 }
 
 export default Button;
