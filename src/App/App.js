@@ -9,7 +9,8 @@ function App() {
     <div className="App">
       DEMAT BREIZH !!!
       <hr/>
-      <Button>"Cliquez ici !!"</Button>
+      {/* Acces à l'image \img car on part de public en commencant "/"" */}
+      <Button>"Cliquez<br/>ici<img src="/img/red-cross.png" alt="cross" height="42" width="42"></img>"</Button>
       <Button children="hello"/>
     </div>
   );
