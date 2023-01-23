@@ -1,0 +1,108 @@
+Cours REACT : 23/01
+
+partage : \\mw14100\Partage
+emargement : 
+https://eval.orsys.fr/Stagiaire/Home
+https://emargement.orsys.fr/Home/Emargement
+
+
+LIBRAIRIE !=> FRAMEWORK
+
+Node.js
+
+github :
+sirixay.phetnouvong@gmail.com
+mdp
+
+# volcabulaire :
+scalfoding
+lazy loading
+story : encyclopédpie : liste de tous les composants et son utilisation :
+		voir story.book ou design.talend.com
+
+npx create-react-app app --template=typescript
+
+
+# lancement du serveur :
+cd nom_du_projet
+npm start
+
+
+# config vscode extensions :
+	eslint
+	tslint
+	ES7 React/Redux/GraphQL/React-Native snippets
+	React PropTypes Intellisense
+	React JS Extensions Pack
+	MUI Snippets
+	Jest Snippets
+	Git Graph
+	Jest Test Explorer (pour le testing. ajoute une icone de flacon)
+
+
+@installed : pour voir les extensions installées.
+
+
+
+# un composant
+	un fihier = un composant
+	Un composant commence toujours par une MAJUSCULE. exemple : App
+
+
+# Creation d'un nouveau composant :
+- Utilisation d'un template via un CLI qui va automatisé la création d'un composant : 
+
+npx generate-react-cli
+
+	puis repondre aux questions
+
+		? Does this project use TypeScript? No
+		? Does this project use CSS modules? Yes
+		? Does this project use a CSS Preprocessor? css
+		? What testing library does your project use? Testing Library
+		? Set the default path directory to where your components will be generated in? src/App/components
+		? Would you like to create a corresponding stylesheet file with each component you generate? Yes
+		? Would you like to create a corresponding test file with each component you generate? Yes
+		? Would you like to create a corresponding story with each component you generate? Yes
+		? Would you like to create a corresponding lazy file (a file that lazy-loads your component out of the box and enables code splitting: https://reactjs.org/docs/code-splitting.html#code-splitting) with each   
+		component you generate? Yes
+
+
+génère le fichier : generate-react-cli.json
+
+# Creation d'un composnat Header
+
+C:\Users\orsys\Desktop\projet\app>npx generate-react-cli c Header  
+Header.js was successfully created at src/App/components/Header/Header.js
+Header.module.css was successfully created at src/App/components/Header/Header.module.css
+Header.test.js was successfully created at src/App/components/Header/Header.test.js
+Header.stories.js was successfully created at src/App/components/Header/Header.stories.js
+Header.lazy.js was successfully created at src/App/components/Header/Header.lazy.js
+
+
+# personnalisation dans le fichier generate-react-cli.json : Ajout d'un bloc ui-component
+npx generate-react-cli -c Header --type=ui-component
+
+# la meme commande en personnalisation un peu plus
+on va crée un répertoire et le fichier template suivant :
+
+C:\Users\orsys\Desktop\projet\app\grc_templates\genericFunctionComponent\TemplateName.jsx
+
+pour lancer c'est : npx generate-react-cli c --type=ui-component Header Footer  
+
+C'est lourd !!!!
+ on ajoute dans la partie script de \app\package.json
+
+ "ui-cmp": "npx generate-react-cli c --type=ui-component"
+
+Après, on lance la commande :
+	npm run ui-cmp Header Footer
+
+
+
+====================================================================================================================================
+Astuce : 
+imr
+bien formater un document (click droit : Format document et on chosie typescript et javascript  ou sinon shift + alt + F)
+
+REACT-PROTO : autre logiciel qui permet de générer des composants
