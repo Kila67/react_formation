@@ -4,7 +4,7 @@ import React from 'react'
 const Button=(props)=>{
     console.log(props);
     return <button className='Button'>
-        {props.text.substr(2,4)}
+        {props.children}
     </button>
 }
 

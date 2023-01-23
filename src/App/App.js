@@ -9,10 +9,8 @@ function App() {
     <div className="App">
       DEMAT BREIZH !!!
       <hr/>
-      <Button text="Cliquez ici !!"/>
-      <Button text="yoyo o"/>
-      <Button text="titititi"/>
-      <Button/>
+      <Button>"Cliquez ici !!"</Button>
+      <Button children="hello"/>
     </div>
   );
 }
