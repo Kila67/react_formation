@@ -27,13 +27,12 @@ class App extends React.PureComponent{
       <Button onButtonClick={()=>{
         this.setState({counter: this.state.counter+1});
       }}
-      style={{backgroundColor:"steelblue"}}
+      // style={{backgroundColor:"steelblue"}}
+      bgColor="steelblue"
       >click +1</Button>
 
-     
-
       {/* test pour defaultProps avec une alert */}
-      <Button  style={{backgroundColor:"tomato", color:"red"}}>test</Button> 
+      <Button  bgColor="tomato" style={{color:"blue"}}>test</Button> 
     </div>
   );
   }

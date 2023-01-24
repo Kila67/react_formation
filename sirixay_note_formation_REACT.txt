@@ -101,6 +101,14 @@ Après, on lance la commande :
 
 
 
+# Typescript :
+Inventé par Microsoft
+Transpilateur : passage du TS vers JS
+type TS : objet, number, string,  ...
+
+un linter ??? qu'est ce donc ??? c'est pour vérifier le code !
+
+
 ====================================================================================================================================
 Astuce : 
 imr
