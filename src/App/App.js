@@ -5,17 +5,28 @@ import './App.css';
 
 class App extends React.PureComponent{
   counter=0;
+  
+  constructor(props){
+    super(props);
+    this.state={counter:0};
+  }
+
+  componentDidUpdate(){
+    console.log('apres la changement effectif de l\'etat :', this.state.counter )
+    console.log(arguments);
+  }
+
   render(){
   return (
     <div className="App">
-      Voici le nombre de clic : {this.counter}
+      Voici le nombre de clic : {this.state.counter}
       <hr/>
       <Button onButtonClick={()=>{
-        this.counter --;
-        console.log(this.counter);
-        this.forceUpdate();
+        this.setState({counter: this.state.counter-1});
       }}>click -1</Button>
-      <Button>click +1</Button>
+      <Button onButtonClick={()=>{
+        this.setState({counter: this.state.counter+1});
+      }}>click +1</Button>
     </div>
   );
   }
