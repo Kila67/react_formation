@@ -1,14 +1,19 @@
 import React from 'react';
 // import logo from './logo.svg';
-import Button from './components/ui/button/Button'
+import Button from './components/ui/buttonts/Button'
 import './App.css';
+interface IAppState {
+  counter:number
+  uneValue:"hello"
+}
+interface IAppProps {}
 
-class App extends React.PureComponent{
+class App extends React.PureComponent<IAppProps, IAppState>{
   counter=0;
   
-  constructor(props){
+  constructor(props:IAppProps){
     super(props);
-    this.state={counter:0};
+    this.state={counter:0, uneValue:"hello"};
   }
 
   componentDidUpdate(){
@@ -33,6 +38,13 @@ class App extends React.PureComponent{
 
       {/* test pour defaultProps avec une alert */}
       <Button  bgColor="tomato" style={{color:"blue"}}>test</Button> 
+
+      <hr/>
+
+      <Button 
+        // type="reset"
+        >Type de bouton</Button>
+
     </div>
   );
   }
