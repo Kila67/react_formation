@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react'
 // import './Button.css';
 import style from './Button.module.css'
+import PropTypes from 'prop-types'
 
 const Button=(props)=>{
 
@@ -32,6 +33,17 @@ const Button=(props)=>{
         </button>
     );
 }
+
+Button.propTypes={
+    onButtonClick:PropTypes.func.isRequired,
+    children:PropTypes.any.isRequired,
+};
+
+Button.defaultProps={
+    onButtonClick:()=>{alert('pas d\'action' );} // alerte => ne pas faire car ca arrete JS 
+}
+
+
 
 export default Button;
 

@@ -27,7 +27,9 @@ class App extends React.PureComponent{
       <Button onButtonClick={()=>{
         this.setState({counter: this.state.counter+1});
       }}>click +1</Button>
-      <Button>test</Button>
+
+      {/* test pour defaultProps avec une alert */}
+      <Button>test</Button> 
     </div>
   );
   }
