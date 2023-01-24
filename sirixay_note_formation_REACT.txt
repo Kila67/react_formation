@@ -103,6 +103,11 @@ Après, on lance la commande :
 
 # Typescript :
 Inventé par Microsoft
+ Les avantages de TypeScript
+
+L'un des principaux avantages de TypeScript est de permettre aux IDE de fournir 
+un environnement plus riche pour détecter les erreurs. Cet avantage nous permet lors du développement d'une application complexe d'améliorer notre productivité.
+
 Transpilateur : passage du TS vers JS
 type TS : objet, number, string,  ...
 
