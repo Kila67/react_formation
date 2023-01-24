@@ -99,6 +99,19 @@ C'est lourd !!!!
 Après, on lance la commande :
 	npm run ui-cmp Header Footer
 
+-------------------------------------------------------------------------
+Generation des parties des parties de l'application MEME :
+
+    "ui-cmp": "npx generate-react-cli c --type=ui-component",
+    "layout-cmp":"npx generate-react-cli c --type=layout-component",
+    "feat-cmp":"npx generate-react-cli c --type=feature-component"
+
+
+npm run ui-cmp NavBar SvgViewver 
+npm run layout-cmp FlexLayout 
+npm run feat-cmp MainForm
+
+
 
 
 # Typescript :
@@ -113,6 +126,19 @@ type TS : objet, number, string,  ...
 
 un linter ??? qu'est ce donc ??? c'est pour vérifier le code !
 
+# voir le FLEX pour le REACT
+
+# Intsallation de yarn
+
+npm i -g yarn
+
+# recuperation d'un package
+
+yarn add orsys-tjs-meme
+
+# on relance avec => 
+
+yarn start
 
 ====================================================================================================================================
 Astuce : 
