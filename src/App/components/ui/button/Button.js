@@ -4,9 +4,16 @@ import style from './Button.module.css'
 
 const Button=(props)=>{
     console.log(props);
-    return <button className={style.Button}>
-        {props.children}
-    </button>
+    return (
+        <button 
+            className={style.Button}
+            onClick={(arg)=>{ 
+                console.log(arg);
+                props.onButtonClick();
+            }}>
+           {props.children}
+        </button>
+    );
 }
 
 export default Button;
