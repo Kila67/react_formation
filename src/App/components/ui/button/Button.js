@@ -8,6 +8,7 @@ const Button=(props)=>{
     // valeur etatique pour function
     const [isClicked, setIsClicked] = useState(false)
 
+
     // hook d'effet de cycle de vie d'une valeur
     useEffect(() => {
         if(isClicked){
@@ -20,6 +21,7 @@ const Button=(props)=>{
     console.log(props);
     return (
         <button 
+            style={props.style}
             className={
                 `${style.Button}${isClicked?' '+style.clicked:''}`
                 // style.Button
