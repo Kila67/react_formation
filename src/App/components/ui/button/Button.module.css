@@ -24,3 +24,15 @@
 .Button {
     vertical-align: middle;
 }
+
+.Button:hover{
+    box-shadow: 10px 10px 25px grey  ;
+
+}
+
+.Button.clicked
+{
+    box-shadow: 5px 5px 25px grey !important ;
+    border: 2px solid rgb(238, 58, 4) ;
+
+}

@@ -38,7 +38,8 @@ npm start
 	Jest Snippets
 	Git Graph
 	Jest Test Explorer (pour le testing. ajoute une icone de flacon)
-
+	ES7+ React/Redux/React-Nativ
+	Fullstack React/React Native s
 
 @installed : pour voir les extensions installées.
 
@@ -106,3 +107,10 @@ imr
 bien formater un document (click droit : Format document et on chosie typescript et javascript  ou sinon shift + alt + F)
 
 REACT-PROTO : autre logiciel qui permet de générer des composants
+
+
+
+# Cours jeu CSS Diner: 
+
+https://flukeout.github.io/
+
