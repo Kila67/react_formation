@@ -1,10 +1,11 @@
 import { DummyMeme } from './interfaces/dummyMeme';
-import {MemeSVGViewer} from 'orsys-tjs-meme';
+import { MemeSVGViewer } from "orsys-tjs-meme";
 import React from 'react';
 import './App.css';
-import MemeForm from './components/feature/MainForm/MainForm';
+import MemeForm from './components/feature/MemeForm/MemeForm';
 import FlexLayout from './components/layout/FlexLayout/FlexLayout';
-// import MemeSvgViewer from './components/ui/SvgViewver/SvgViewver';
+import Footer from "./components/ui/Footer/Footer";
+import Header from "./components/ui/Header/Header";
 interface IAppState { }
 interface IAppProps { }
 
@@ -12,11 +13,12 @@ class App extends React.PureComponent<IAppProps, IAppState> {
   render() {
     return (
       <div className="App">
+        <Header />
         <FlexLayout>
-          {/* <MemeSvgViewer/> */}
-          <MemeSVGViewer image={undefined} meme={DummyMeme}/>
+        <MemeSVGViewer image={undefined} meme={DummyMeme} />
           <MemeForm/>
         </FlexLayout>
+        <Footer />
       </div>
     );
   }
