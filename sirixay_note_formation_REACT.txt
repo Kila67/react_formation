@@ -146,7 +146,11 @@ yarn add storybook
 # instalation de server pour json :
 yarn add json-server
 
+npm run json
 
+# ajout extension pour faire des requetes REST aquivalent à "Postman"
+
+extensions chrome : YARC
 
 ====================================================================================================================================
 Astuce : 
@@ -165,3 +169,6 @@ https://flukeout.github.io/
 Vocabulaire :
 
 binding : mettre à jour la varible qu'on a changer
+
+promesse : 	c'est une promesse d'execution de quelquechose (qui peut etre une transaction)
+			Analogie avec un ticket de loto : la promesse c'est le ticket de=u loto !!!

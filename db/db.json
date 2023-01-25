@@ -1,26 +1,39 @@
 {
-    "images": [
-        {
-            "id": 0,
-            "url": "img1.jpg",
-            "w": 400,
-            "h": 400,
-            "name": "dummy sample"
-        }
-    ],
-    "memes": [
-        {
-            "id": 0,
-            "titre": "Mon 1er meme",
-            "text": "React m'a tué",
-            "x": 50,
-            "y": 70,
-            "fontWeight": "500",
-            "fontSize": 30,
-            "underline": true,
-            "italic": false,
-            "imageId": 0,
-            "color": "#EF3DE5"
-        }
-    ]
+  "images": [
+    {
+      "id": 0,
+      "url": "img1.jpg",
+      "w": 400,
+      "h": 400,
+      "name": "dummy sample"
+    }
+  ],
+  "memes": [
+    {
+      "id": 0,
+      "titre": "Mon 1er meme",
+      "text": "React m'a tué",
+      "x": 50,
+      "y": 70,
+      "fontWeight": "500",
+      "fontSize": 30,
+      "underline": true,
+      "italic": false,
+      "imageId": 0,
+      "color": "#EF3DE5"
+    },
+    {
+      "titre": "Mon 1er meme",
+      "text": "React m'a tué",
+      "x": 50,
+      "y": 70,
+      "fontWeight": "500",
+      "fontSize": 30,
+      "underline": true,
+      "italic": false,
+      "imageId": 0,
+      "color": "#EF3DE5",
+      "id": 1
+    }
+  ]
 }
