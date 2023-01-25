@@ -20,7 +20,7 @@ class App extends React.PureComponent<IAppProps, IAppState> {
     return (
       <div className="App">
         <Header />
-        <FlexLayout>
+        <FlexLayout  style={{ height: '89vh' }}>
         <MemeSVGViewer image={undefined} meme={this.state.meme} />
           {/* <MemeForm/> */}
           <MemeForm 

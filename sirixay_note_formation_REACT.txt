@@ -141,6 +141,10 @@ yarn add orsys-tjs-meme
 yarn start
 
 # installation : storybook
+yarn add storybook
+
+# instalation de server pour json :
+yarn add json-server
 
 
 
