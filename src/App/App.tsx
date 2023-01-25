@@ -7,6 +7,8 @@ import FlexLayout from './components/layout/FlexLayout/FlexLayout';
 import Footer from "./components/ui/Footer/Footer";
 import Header from "./components/ui/Header/Header";
 import { BASE_MEME_IMG, REST_ADR } from "./config/config";
+import { uneValueADeleteApresImpl } from './store/store';
+
 
 interface IAppState { meme: MemeInterface, images:Array<ImageInterface> }
 interface IAppProps { }
@@ -18,6 +20,7 @@ class App extends React.PureComponent<IAppProps, IAppState> {
   }
 
   componentDidMount(): void {
+    console.log(uneValueADeleteApresImpl);
     fetch(`${REST_ADR}/images`)
       .then(r=>r.json(),r=>[])
       .then(ar=>this.setState({images:ar}));
