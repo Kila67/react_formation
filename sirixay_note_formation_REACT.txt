@@ -5,6 +5,9 @@ emargement :
 https://eval.orsys.fr/Stagiaire/Home
 https://emargement.orsys.fr/Home/Emargement
 
+github du prof : champix56
+
+
 
 LIBRAIRIE !=> FRAMEWORK
 
@@ -151,6 +154,17 @@ npm run json
 # ajout extension pour faire des requetes REST aquivalent à "Postman"
 
 extensions chrome : YARC
+
+---------------------------------------------------------------------------------------------------------------------
+# REDUX : c'est un MAGASIN (voir ppt)
+
+comparaison ; entre composent npm => tape : npm trend / ou google trend / 
+
+outil ; redux toolkit !!! qui fabrique la totale et c'est la bonne pratique
+
+commande installation  : 
+yarn add redux react-redux @reduxjs/toolkit
+
 
 ====================================================================================================================================
 Astuce : 
