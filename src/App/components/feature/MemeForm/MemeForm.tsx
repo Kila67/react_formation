@@ -1,3 +1,4 @@
+import { MemeInterface, ImageInterface } from "orsys-tjs-meme";
 import { IImage, IMeme } from "orsys-tjs-meme/dist/interfaces/common";
 import React, { useEffect, useState } from "react";
 import Button from "../../ui/Buttonts/Button";
@@ -5,6 +6,8 @@ import style from "./MemeForm.module.css";
 
 //types
 interface IMemeFormProps {
+  onMemeValueChange: Function,
+  meme: MemeInterface
 }
 
 const MemeForm: React.FC<IMemeFormProps> = (props) => {
@@ -27,7 +30,13 @@ const MemeForm: React.FC<IMemeFormProps> = (props) => {
         <h2>text</h2>
         <input
           type="text"
-          value="props.meme.text"
+          value={props.meme.text}
+          onChange={
+            (evt) => {
+              console.log(evt.target.value);
+              props.onMemeValueChange({ ...props.meme, text: evt.target.value });
+            }
+          }
         />
         <div className={style.half}>
           <div>
@@ -50,7 +59,7 @@ const MemeForm: React.FC<IMemeFormProps> = (props) => {
           </div>
         </div>
         <hr />
-        <label htmlFor="f_color">Couleur</label><br/>
+        <label htmlFor="f_color">Couleur</label><br />
         <input
           type="color"
           id="f_color"
@@ -100,7 +109,7 @@ const MemeForm: React.FC<IMemeFormProps> = (props) => {
             />
           </div>
         </div>
-        <hr/>
+        <hr />
         <div className={style.half}>
           <Button type="reset" bgColor="tomato">
             Reset

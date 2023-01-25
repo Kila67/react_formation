@@ -157,3 +157,7 @@ REACT-PROTO : autre logiciel qui permet de générer des composants
 
 https://flukeout.github.io/
 
+====================================================================================================================================
+Vocabulaire :
+
+binding : mettre à jour la varible qu'on a changer
