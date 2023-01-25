@@ -6,6 +6,7 @@ import MemeForm from './components/feature/MemeForm/MemeForm';
 import FlexLayout from './components/layout/FlexLayout/FlexLayout';
 import Footer from "./components/ui/Footer/Footer";
 import Header from "./components/ui/Header/Header";
+import { BASE_MEME_IMG, REST_ADR } from "./config/config";
 
 interface IAppState { meme: MemeInterface, images:Array<ImageInterface> }
 interface IAppProps { }
@@ -13,16 +14,15 @@ interface IAppProps { }
 class App extends React.PureComponent<IAppProps, IAppState> {
   constructor(props: IAppProps) {
     super(props)
-    this.state = { meme: DummyMeme, images:[
-      {
-        "id": 0,
-        "url": "saitama.png",
-        "w": 2640,
-        "h": 2200,
-        "name": "saitama"
-      },
-    ] };
+    this.state = { meme: DummyMeme, images:[] };
   }
+
+  componentDidMount(): void {
+    fetch(`${REST_ADR}/images`)
+      .then(r=>r.json(),r=>[])
+      .then(ar=>this.setState({images:ar}));
+  }
+
 
   render() {
     return (
