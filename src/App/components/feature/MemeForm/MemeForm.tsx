@@ -7,7 +7,8 @@ import style from "./MemeForm.module.css";
 //types
 interface IMemeFormProps {
   onMemeValueChange: Function,
-  meme: MemeInterface
+  meme: MemeInterface,
+  images: Array<ImageInterface>
 }
 
 const MemeForm: React.FC<IMemeFormProps> = (props) => {
@@ -29,8 +30,16 @@ const MemeForm: React.FC<IMemeFormProps> = (props) => {
         />
         <hr />
         <h2>Image</h2>
-        <select>
+        <select onChange={
+            (evt)=>{
+              console.log(evt.target.value);
+              props.onMemeValueChange({...props.meme,imageId: Number(evt.target.value)});
+            }
+          }
+            value={props.meme.imageId}
+          >
           <option value="-1">Aucune</option>
+          {props.images.map((e,i,)=>{return <option key={'fimg'+i} value={e.id}>{e.name}</option>})}
         </select>
         <hr />
         <h2>text</h2>

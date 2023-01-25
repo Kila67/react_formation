@@ -2,10 +2,17 @@
   "images": [
     {
       "id": 0,
-      "url": "img1.jpg",
-      "w": 400,
-      "h": 400,
-      "name": "dummy sample"
+      "url": "saitama.png",
+      "w": 2640,
+      "h": 2200,
+      "name": "saitama"
+    },
+    {
+      "id": 1,
+      "url": "rire.bmp",
+      "w": 225,
+      "h": 225,
+      "name": "rire"
     }
   ],
   "memes": [
